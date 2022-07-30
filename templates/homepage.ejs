@@ -11,21 +11,22 @@
     .collage img {
       width: 100%;
     }
-    .collage h1 {
+    .collage h2 {
       position: absolute;
       font-size: 24px;
       max-width: 600px;
       margin-top: var(--gutter);
+      color: white;
     }
-    .collage h1 > div {
+    .collage h2 > div {
       font-size: 18px;
       margin-top: var(--gutter);
     }
     @media (min-width: 769px) {
-      .collage h1 {
+      .collage h2 {
         font-size: 36px;
       }
-      .collage h1 > div {
+      .collage h2 > div {
         font-size: 26px;
       }
     }
@@ -35,8 +36,9 @@
   <%- include('header'); %>
   <div class="collage">
     <div class="main-wrapper" style="position: relative">
-      <h1>“The great concert halls of the world inspire, and leave a strong intergenerational legacy”<div>- Dame Darcey Bussell, Patron</div></h1>
+      <h2>“The great concert halls of the world inspire, and leave a strong intergenerational legacy”<div>- Dame Darcey Bussell, Patron</div></h2>
     </div>
+    <figure>
     <picture>
       <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/collage.webp" />
       <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/collage.jpg" />
@@ -44,6 +46,8 @@
       <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/collage-mobile.jpg" />
       <img class="image" src="/home/images/collage.jpg" alt="Frank Gehry Collage">
     </picture>
+    <figcaption>Frank Gehry 'Collage III' - Wimbledon Concert Hall at night</figcaption>
+    </figure>
   </div>
   <div class="main-wrapper">
     <%- content %>

@@ -4,43 +4,122 @@
   initial-value: 0px;
 }
 
-#header ul {
-  margin: var(--gutter) 0;
-  padding: 0;
+#main-menu {
+  padding: 14px 0;
+}
+
+#main-menu .upper-wrapper {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
-@media (min-width: 769px) {
-  #header ul {
-    flex-direction: row;
-  }
+#main-menu .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-#header ul li {
+#main-menu .logo-wording {
+  display: inline-block;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+#main-menu .logo-symbol {
+  margin-right: 10px;
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+
+#main-menu .inner-wrapper {
+  overflow-x: scroll;
+}
+
+#main-menu ul {
+  margin: 14px 0 0;
+  padding: 0;
+  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main-menu ul li {
   list-style-type: none;
+  display: inline-block;
 }
 
-#header ul li a {
-  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+#main-menu ul li a {
+  text-decoration: underline 0.15em transparent;
   text-underline-offset: var(--offset, 0.2em);
   transition: --offset 300ms, text-decoration-color 300ms;
 }
 
-#header ul li a:focus,
-#header ul li a:hover {
-  text-decoration-color: rgba(255, 255, 255, 1);
+#main-menu ul li a.active {
+  color: var(--primary);
+}
+
+#main-menu ul li a:focus,
+#main-menu ul li a:hover {
+  text-decoration-color: var(--primary);
   --offset: 0.4em;
 }
 
 @supports not (background: paint(something)) {
-  #header ul li a {
+  #main-menu ul li a {
     transition: text-underline-offset 400ms, text-decoration-color 400ms;
   }
   
-  #header ul li a:hover,
-  #header ul li a:focus {
+  #main-menu ul li a:hover,
+  #main-menu ul li a:focus {
     text-underline-offset: 0.4em;
+  }
+}
+
+#main-menu .header-button {
+  position: relative;
+  color: black;
+  display: flex;
+  padding: 0;
+  border-width: 0;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+  background: none;
+}
+
+#main-menu .header-button svg {
+  width: 35px;
+  height: 35px;
+}
+
+[data-theme="dark"] #main-menu .header-button svg {
+  color: white;
+}
+
+@media (min-width: 769px) {
+  #main-menu ul {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-menu .logo-wording {
+    font-size: 18px;
+  }
+
+  #main-menu .header-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  #main-menu ul li {
+    margin-right: 14px;
+  }
+  
+  #main-menu ul li:last-child {
+    margin: 0;
   }
 }

@@ -81,12 +81,12 @@ h5 {
   --h6-color: #6a6a6a;
   --muted-color: #8c8c8c;
   --muted-border-color: #f5f5f5;
-  --primary: #2ea44f;
-  --primary-hover: #2c974b;
-  --primary-focus: rgba(46, 164, 79, 0.4);
+  --primary: #E06996  ;
+  --primary-hover: #9c4365;
+  --primary-focus: rgba(206, 48, 162, 0.4);
   --primary-border: #1b1f2326;
   --primary-inverse: #fff;
-  --link: #757575;
+  --link: #333;
   --secondary: #757575;
   --secondary-hover: #616161;
   --secondary-focus: rgba(120, 120, 120, 0.125);
@@ -145,16 +145,16 @@ h5 {
   --h6-color: #c2c3c3;
   --muted-color: #8c8c8c;
   --muted-border-color: #262626;
-  --primary: linear-gradient(#407045, #305530);
-  --primary-hover: linear-gradient(#508055, #407045);
-  --primary-focus: rgba(46, 164, 79, 0.4);
-  --primary-border: #083;
+  --primary: #E06996;
+  --primary-hover: #9c4365;
+  --primary-focus: rgba(206, 48, 162, 0.4);
+  --primary-border: #E06996;
   --primary-inverse: #fff;
   --secondary: #757575;
   --secondary-hover: #8c8c8c;
   --secondary-focus: rgba(141, 141, 141, 0.25);
   --secondary-inverse: #fff;
-  --link: #cecece;
+  --link: #FFF;
   --contrast: #f5f5f5;
   --contrast-hover: #fff;
   --contrast-focus: rgba(141, 141, 141, 0.25);
@@ -433,14 +433,6 @@ abbr[title] {
   border-bottom: 1px dotted;
   text-decoration: none;
   cursor: help
-}
-
-::-moz-selection {
-  background-color: var(--primary-focus)
-}
-
-::selection {
-  background-color: var(--primary-focus)
 }
 
 :where(audio, canvas, iframe, img, svg, video) {
