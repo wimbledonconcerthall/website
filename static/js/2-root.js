@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Blog nav active element
+  // News nav active element
   const blogCategoryItems = document.querySelectorAll('#filters a');
   const allFilterButton = document.getElementById('all-filter');
   if (blogCategoryItems) {

@@ -1,6 +1,8 @@
 ---
-title: "Education"
+title: "Community"
 ---
+
+## Education
 
 “There’s a lotof stuff that happens around music that is exciting. It’s 
 going to bring joy to the community, pride to the community. It’s part 

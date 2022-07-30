@@ -1,5 +1,5 @@
 ---
 title: WCH
-template: blog
+template: news
 shouldHideTitle: true
 ---
