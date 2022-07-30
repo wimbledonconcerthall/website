@@ -2,9 +2,49 @@
 <html lang="<%= lang %>">
 <head>
   <%- include('head'); %>
+  <style>
+    .collage {
+      width: 100%;
+      height: fit-content;
+      margin-bottom: var(--gutter);
+    }
+    .collage img {
+      width: 100%;
+    }
+    .collage h1 {
+      position: absolute;
+      font-size: 24px;
+      max-width: 600px;
+      margin-top: var(--gutter);
+    }
+    .collage h1 > div {
+      font-size: 18px;
+      margin-top: var(--gutter);
+    }
+    @media (min-width: 769px) {
+      .collage h1 {
+        font-size: 36px;
+      }
+      .collage h1 > div {
+        font-size: 26px;
+      }
+    }
+  </style>
 </head>
 <body>
   <%- include('header'); %>
+  <div class="collage">
+    <div class="main-wrapper" style="position: relative">
+      <h1>“The great concert halls of the world inspire, and leave a strong intergenerational legacy”<div>- Dame Darcey Bussell, Patron</div></h1>
+    </div>
+    <picture>
+      <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/collage.webp" />
+      <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/collage.jpg" />
+      <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/collage-mobile.webp" />
+      <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/collage-mobile.jpg" />
+      <img class="image" src="/home/images/collage.jpg" alt="Frank Gehry Collage">
+    </picture>
+  </div>
   <div class="main-wrapper">
     <%- content %>
   </div>
