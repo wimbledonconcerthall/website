@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem(themeKey, 'light');
       }
     }
-    utterancesTheme();
   });
 
   themeToggleButton.addEventListener('click', event => {
@@ -53,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem(themeKey, 'dark');
       }
     }
-    utterancesTheme();
   });
 
   // Top nav active element
@@ -71,4 +69,20 @@ document.addEventListener("DOMContentLoaded", function() {
   if (hasConsent && !window.location.host.includes('localhost')) {
     initDataCapture();
   }
+
+  // Side menu
+  const toggleMenuButton = document.getElementById('menu-toggle');
+  const closeMenuButton = document.getElementById('close-side-menu');
+  const sideMenu = document.getElementById('side-menu');
+
+  function toggleMenu() {
+    if (sideMenu.classList.contains('open')) {
+      sideMenu.classList.remove('open');
+    } else {
+      sideMenu.classList.add('open');
+    }
+  }
+
+  toggleMenuButton.addEventListener('click', toggleMenu);
+  closeMenuButton.addEventListener('click', toggleMenu);
 });

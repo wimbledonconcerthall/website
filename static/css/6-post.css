@@ -151,21 +151,11 @@
   .post .image {
     border-radius: 8px;
   }
-
-  .post .utterances {
-    max-width: var(--post-content-max-width);
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 650px) {
   .main-wrapper.post {
     padding: 0;
-  }
-
-  .post .utterances-frame {
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .post .details .meta {

@@ -3,38 +3,97 @@
 <head>
   <%- include('head'); %>
   <style>
-    .collage {
+    .hero {
       width: 100%;
       height: fit-content;
       margin-bottom: var(--gutter);
     }
-    .collage img {
+    .hero img {
       width: 100%;
     }
-    .collage h2 {
+    .hero h2 {
       position: absolute;
       font-size: 24px;
       max-width: 600px;
       margin-top: var(--gutter);
       color: white;
     }
-    .collage h2 > div {
+    .hero h2 > div {
       font-size: 18px;
       margin-top: var(--gutter);
     }
+    .video-slide h3 {
+      text-align: center;
+    }
+    .two-columns-slide {
+      display: flex;
+      flex-direction: column;
+    }
+    video {
+      width: 100%;
+      margin-bottom: 48px;
+    }
+    .floor-plan {
+      display: flex;
+      flex-direction: column;
+    }
+    .floor-plan img {
+      border: 1px solid var(--form-element-border-color);
+    }
+    [data-theme="dark"] .floor-plan img {
+      filter: invert(1);
+    }
+    .floor-plan figure {
+      margin: 0 4px 24px;
+    }
+    .floor-plan figure:last-child {
+      margin-right: 0;
+    }
+    .floor-plan figure figcaption {
+      text-align: left;
+    }
+    .banner-quote {
+      padding: 40px 20px;
+      background-color: var(--banner-background-color);
+      font-size: 24px;
+      text-align: center;
+    }
+    .banner-quote span {
+      display: block;
+      margin-top: 14px;
+      font-size: 16px;
+    }
     @media (min-width: 769px) {
-      .collage h2 {
+      .hero h2 {
         font-size: 36px;
       }
-      .collage h2 > div {
+      .hero h2 > div {
         font-size: 26px;
+      }
+      .two-columns-slide,
+      .floor-plan {
+        flex-direction: row;
+      }
+      .two-columns-slide div {
+        width: 50%;
+        margin-right: 24px;
+      }
+      .two-columns-slide div:last-child {
+        margin-right: 0;
+      }
+      .banner-quote {
+        padding: 120px 100px;
+        font-size: 28px;
+      }
+      .banner-quote span {
+        font-size: 20px;
       }
     }
   </style>
 </head>
 <body>
   <%- include('header'); %>
-  <div class="collage">
+  <div class="hero">
     <div class="main-wrapper" style="position: relative">
       <h2>“The great concert halls of the world inspire, and leave a strong intergenerational legacy”<div>- Dame Darcey Bussell, Patron</div></h2>
     </div>
@@ -50,7 +109,85 @@
     </figure>
   </div>
   <div class="main-wrapper">
+    <div class="video-slide">
+      <h3>Music gives wings to the soul</h3>
+      <p>The great concert halls of the world have the power to change lives and inspire  etc.../ Gehry in his studio and sync ““Concert hall projects are the most exciting for me - ... I prioritize them over living practically “To have a Frank Gehry-designed concert hall in Wimbledon would be a total transformation of London concert life.  It would have a global effect.</p>
+    </div>
+    <video src="/video/intro.mp4" controls poster="/video/intro-poster.jpg"></video>
+    <h3>The vision</h3>
+    <div class="two-columns-slide">
+      <div>
+        <p>Music moves us, but too often these days, it just moves with us, little more than bits and bytes on a device.</p>
+        <p>We offer an alternative: a unique opportunity to build an iconic, state of the art centre for live music. Frank Gehry&quote;s vision for a concert hall in Wimbledon will have a transformational effect not only on this area, but also on Londony&quote;s cultural life. His extraordinary new structure will offer the highest quality musical experiences to everyone, from aficionados to local schoolchildren.</p>
+        <p>To see it happen, we need your help. We are looking for supporters who want to leave a lasting legacy for Wimbledon, Merton, London and the world of music.</p>
+      </div>
+      <div>
+        <ul>
+          <li>1,250-seat Main Hall</li>
+          <li>Stage for full orchestra - 200 choir</li>
+          <li>Dance - Orchestra pit</li>
+          <li>Fully flexible for multi-genres programming, including classical, jazz, folk, world, contemporary, opera, dance, digital and multi-media</li>
+          <li>State-of-the-art: lighting, digital, projections</li>
+          <li>450-seat Second Space</li>
+          <li>150-seat experimental space / additional rehearsal space</li>
+          <li>Recording facilities</li>
+          <li>Major Orchestras and Artist in Residence</li>
+          <li>Ambitions Educational, Community and Outreach programmes</li>
+          <li>Creative administration of all aspects of the building</li>
+        </ul>
+      </div>
+    </div>
+    <h3>Frank Gehry initial plans</h3>
+    <div class="floor-plan">
+      <figure>
+        <picture>
+          <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-1.webp" />
+          <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-1.jpg" />
+          <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-1-mobile.webp" />
+          <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-1-mobile.jpg" />
+          <img class="image" src="/home/images/floor-plan-1.jpg" alt="Floor Plan 1">
+        </picture>
+        <figcaption><b>Ground Level Floor Plan</b> with rental/endowing facilities</figcaption>
+      </figure>
+      <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-2.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-2.jpg" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-2-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-2-mobile.jpg" />
+        <img class="image" src="/home/images/floor-plan-2.jpg" alt="Floor Plan 2">
+      </picture>
+      <figcaption><b>Level 01 Floor Plan</b> 1,250-seat Main Hall; 450-seat Second Space</figcaption>
+    </figure>
+    </div>
+    <div class="floor-plan">
+      <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-3.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-3.jpg" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-3-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-3-mobile.jpg" />
+        <img class="image" src="/home/images/floor-plan-3.jpg" alt="Floor Plan 3">
+      </picture>
+      <figcaption><b>Level 02 Floor Plan</b></figcaption>
+    </figure>
+      <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-4.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-4.jpg" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-4-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-4-mobile.jpg" />
+        <img class="image" src="/home/images/floor-plan-4.jpg" alt="Floor Plan 4">
+      </picture>
+      <figcaption><b>Level 03 with Roof Gardens</b> (covered)</figcaption>
+    </figure>
+    </div>
+    <h3>Interview: Frank Gehry and John Wilson - June 2022</h3>
+    <video src="/video/interview.mp4" controls poster="/video/interview-poster.jpg"></video>
     <%- content %>
+  </div>
+  <div class="banner-quote">
+    <div class="main-wrapper">“There’s a lot that happens around music that is exciting. The Kids get involved. It opens doors in their minds and gives them part of a bigger world.” <span>-  Frank Gehry</span></div>
   </div>
   <%- include('footer'); %>
 </body>

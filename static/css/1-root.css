@@ -72,6 +72,8 @@ h5 {
 [data-theme=light] {
   color-scheme: light;
   --background-color: #fff;
+  --footer-background-color: #EEE;
+  --banner-background-color: #DDD;
   --color: rgba(0, 0, 0, 0.9);
   --h1-color: #323232;
   --h2-color: #3a3a3a;
@@ -128,7 +130,7 @@ h5 {
   --dropdown-box-shadow: var(--card-box-shadow);
   --dropdown-color: var(--color);
   --dropdown-hover-background-color: #f5f5f5;
-  --modal-overlay-background-color: rgba(213, 220, 226, 0.8);
+  --modal-overlay-background-color: rgba(227, 227, 227, 0.8);
   --icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   --icon-search: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(65, 84, 98, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
 }
@@ -136,6 +138,8 @@ h5 {
 [data-theme=dark] {
   color-scheme: dark;
   --background-color: #181818;
+  --footer-background-color: #000;
+  --banner-background-color: #111;
   --color: #cecece;
   --h1-color: #f5f5f5;
   --h2-color: #ececec;

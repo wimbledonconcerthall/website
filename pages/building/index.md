@@ -4,25 +4,16 @@ title: The Building
 
 ## Architect: Frank Gehry
 
-Architect  Frank Gehry [b 1929: age 93]
-Image of Gehry looking up at exterior of Walt Disney Hall
-“Frank Gehry has been called the most important architect of our age and it’s 
-hard to disagree. His awe-inspiring structures have become must-visit 
-destinations” Architectural Digest
-Image of Gehry looking at us, hand on concert hall model [as invitation]
-“I love the challenge of concert halls.  
-How do you make a building communicate?
-How do you make the stage conducive to interaction
-- or the orchestra share what the audience is feeling? 
-It has to do with scale, materials, placement of details
-its humanity”         Frank Gehry
-An evolving sequence of moving (overlapping) images of Gehry’s WCH designs: 
-Model shot -- ground level plan -- first floor plan  -- second floor plan -- roof plan -- 
-concert hall side elevation -- Collage lll  Concert Hall at night
-Overlay on night image [or short sync from interview`?]
-“I like the idea of glass.  It has a light value, a welcoming attraction” Frank Gehry
-Gehry has proven time and again the force that's produced when 
-whimsical design is done masterfully. Architectural Digest
+Born in 1929. Age 93
+
+> “Frank Gehry has been called the most important architect of our age and it’s hard to disagree. His awe-inspiring structures have become must-visit destinations” - Architectural Digest
+
+> “I love the challenge of concert halls. How do you make a building communicate? How do you make the stage conducive to interaction - or the orchestra share what the audience is feeling? It has to do with scale, materials, placement of details its humanity” - Frank Gehry
+
+> “I like the idea of glass.  It has a light value, a welcoming attraction” - Frank Gehry
+
+> Gehry has proven time and again the force that's produced when whimsical design is done masterfully. - Architectural Digest
+
 Thumb size images of iconic buildings  [with names]
 • Guggenheim Museum, Bibao. 
 “The greatest building of our time” Philip Johnson,  architect 
