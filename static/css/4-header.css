@@ -29,8 +29,10 @@
 #main-menu .logo-symbol {
   margin-right: 10px;
   position: relative;
-  width: 35px;
+  width: 50px;
   height: 35px;
+  color: transparent;
+  stroke: var(--color);
 }
 
 #main-menu ul {
