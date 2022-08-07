@@ -52,21 +52,22 @@ function findImages(directory) {
 
 async function resizeImages(file) {
   const image = await sharp(file);
+  const extension = file.includes('.png') ? '.png' : '.jpg';
   // const metadata = await image.metadata();
   // if (metadata.width > 800) {
 
   console.log(`Resizing ${file}`)
   
-  image.toFile(file.replace('.jpg', '.webp'), (err) => {
+  image.toFile(file.replace(extension , '.webp'), (err) => {
     if (err) console.log(err);
   });
 
   const resizedImage = image.resize(768);
   
-  resizedImage.toFile(file.replace('.jpg', '-mobile.jpg'), (err) => {
+  resizedImage.toFile(file.replace(extension, `-mobile${extension}`), (err) => {
     if (err) console.log(err);
   });
-  resizedImage.toFile(file.replace('.jpg', '-mobile.webp'), (err) => {
+  resizedImage.toFile(file.replace(extension, '-mobile.webp'), (err) => {
     if (err) console.log(err);
   });
 }

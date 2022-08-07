@@ -92,8 +92,12 @@
   height: 35px;
 }
 
-[data-theme="dark"] #main-menu .header-button svg {
+[data-theme="dark"] #main-menu .header-button {
   color: white;
+}
+
+#main-menu .header-button:hover {
+  color: var(--primary);
 }
 
 #menu-toggle {

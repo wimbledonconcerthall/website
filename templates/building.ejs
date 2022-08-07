@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+
+<head>
+  <%- include('head'); %>
+    <style>
+      .pink {
+        background-color: #E06996;
+        color: white;
+      }
+      .orange {
+        background-color: #F78568;
+        color: white;
+      }
+      .ochre {
+        background-color: #FFCF7D;
+        color: black;
+      }
+
+      h2 {
+        margin-top: 42px;
+      }
+
+      @media (min-width: 769px) {}
+    </style>
+</head>
+
+<body>
+  <%- include('header'); %>
+    <div class="pink banner-quote">
+      <div class="main-wrapper">"Gehry has been called the most important architect of our age and it’s hard to
+        disagree. His awe-inspiring structures have become must-visit destinations"
+        <span>— Architectural Digest</span>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <h2>Architect: Frank Gehry</h2>
+      <div class="two-columns-slide">
+        <div>
+          <p>Born in 1929. Age 93</p>
+          <blockquote>“I love the challenge of concert halls. How do you make a building communicate? How do you make
+            the stage conducive to interaction - or the orchestra share what the audience is feeling? It has to do with
+            scale, materials, placement of details its humanity" — Frank Gehry</blockquote>
+          <blockquote>"I like the idea of glass. It has a light value, a welcoming attraction" — Frank Gehry
+          </blockquote>
+          <blockquote>"Gehry has proven time and again the force that's produced when whimsical design is done
+            masterfully" — Architectural Digest</blockquote>
+        </div>
+        <div>
+          <figure>
+            <picture>
+              <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/frank.webp" />
+              <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/frank.jpg" />
+              <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/frank-mobile.webp" />
+              <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/frank-mobile.jpg" />
+              <img class="image" src="/building/images/frank.jpg" alt="Frank Gehry">
+            </picture>
+            <figcaption>Frank Gehry at the Walt Disney Concert Hall</figcaption>
+          </figure>
+        </div>
+      </div>
+      <figure>
+        <picture>
+          <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/model.webp" />
+          <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/model.jpg" />
+          <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/model-mobile.webp" />
+          <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/model-mobile.jpg" />
+          <img class="image" src="/building/images/model.jpg" alt="Frank Gehry with the Wimbledon Concert Hall model">
+        </picture>
+        <figcaption>Frank Gehry with the Wimbledon Concert Hall model</figcaption>
+      </figure>
+    </div>
+    <div class="banner-quote">
+      <div class="main-wrapper">"I love the challenge of concert halls. How do you make a building communicate? How do
+        you make the stage conducive to interaction or the orchestra share what the audience is feeling? It has to do
+        with scale, materials, placement of details its humanity"<span>— Frank Gehry</span></div>
+    </div>
+    <div class="slider">
+      <div class="slide">
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/model-1.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/model-1.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/model-1-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/model-1-mobile.png" />
+            <img class="image" src="/home/images/model-1.png" alt="Floor Plan 4">
+          </picture>
+          <figcaption>Model</figcaption>
+        </figure>
+      </div>
+      <div class="slide">
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/model-2.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/model-2.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/model-2-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/model-2-mobile.png" />
+            <img class="image" src="/home/images/model-2.png" alt="Floor Plan 4">
+          </picture>
+          <figcaption>Model</figcaption>
+        </figure>
+      </div>
+      <div class="slide">
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-1.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-1.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-1-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-1-mobile.png" />
+            <img class="image" src="/home/images/floor-plan-1.png" alt="Floor Plan 1">
+          </picture>
+          <figcaption><b>Ground Level Floor Plan</b> with rental/endowing facilities</figcaption>
+        </figure>
+      </div>
+      <div class="slide">
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-2.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-2.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-2-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-2-mobile.png" />
+            <img class="image" src="/home/images/floor-plan-2.png" alt="Floor Plan 2">
+          </picture>
+          <figcaption><b>Level 01 Floor Plan</b> 1,250-seat Main Hall; 450-seat Second Space</figcaption>
+        </figure>
+      </div>
+      <div class="slide">
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-3.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-3.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-3-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-3-mobile.png" />
+            <img class="image" src="/home/images/floor-plan-3.png" alt="Floor Plan 3">
+          </picture>
+          <figcaption><b>Level 03 with Roof Gardens</b> (covered)</figcaption>
+        </figure>
+      </div>
+      <div class="slide">
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-4.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-4.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-4-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-4-mobile.png" />
+            <img class="image" src="/home/images/floor-plan-4.png" alt="Floor Plan 4">
+          </picture>
+          <figcaption>Floor Plan 4</figcaption>
+        </figure>
+      </div>
+      <div class="slide">
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/site-plan.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/site-plan.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/site-plan-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/site-plan-mobile.png" />
+            <img class="image" src="/home/images/site-plan.png" alt="Floor Plan 4">
+          </picture>
+          <figcaption>Site Plan</figcaption>
+        </figure>
+      </div>
+      <div class="slide">
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/elevation.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/elevation.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/elevation.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/elevation.png" />
+            <img class="image" src="/home/images/elevation.png" alt="Section elevation">
+          </picture>
+          <figcaption>Section elevation</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="banner-quote orange">
+      <div class="main-wrapper">"Gehry has proven time and again the force that's produced when whimsical design is done masterfully"<span>— Architectural Digest</span></div>
+    </div>
+    <div class="flex-columns">
+      <div>
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/bilbao.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/bilbao.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/bilbao-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/bilbao-mobile.png" />
+            <img class="image" src="/building/images/bilbao.png" alt="Guggenheim Museum, Bibao">
+          </picture>
+          <figcaption>Guggenheim Museum, Bibao</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/vuitton.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/vuitton.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/vuitton-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/vuitton-mobile.png" />
+            <img class="image" src="/building/images/vuitton.png" alt="Louis Vuitton Foundation, Paris">
+          </picture>
+          <figcaption>Louis Vuitton Foundation, Paris</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/dancing.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/dancing.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/dancing-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/dancing-mobile.png" />
+            <img class="image" src="/building/images/dancing.png" alt="Fred and Ginger, The Dancing House, Prague">
+          </picture>
+          <figcaption>Fred and Ginger, The Dancing House, Prague</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <h3>The Wimbledon Concert Hall seeks to join these outstanding Gehry halls</h3>
+    </div>
+    <div class="flex-columns">
+      <div>
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/miami.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/miami.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/miami-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/miami-mobile.png" />
+            <img class="image" src="/building/images/miami.png" alt="New World Symphony, Miami">
+          </picture>
+          <figcaption>New World Symphony, Miami</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure>
+          <picture>
+            <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/disney.webp" />
+            <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/disney.png" />
+            <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/disney-mobile.webp" />
+            <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/disney-mobile.png" />
+            <img class="image" src="/building/images/disney.png" alt="Walt Disney, Los Angeles">
+          </picture>
+          <figcaption>Walt Disney, Los Angeles</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="banner-quote ochre">
+      <div class="main-wrapper">"All were made possible by large-scale philanthropic gifts; all have become famous iconic works of architecture; and all are known by the name of the major philanthropic donor, or the business they represent"<span>— Billionaire Magazine</span></div>
+    </div>
+    <div class="banner-quote">
+      <div class="main-wrapper">"To have a Frank Gehry designed concert hall in Wimbledon would be a total transformation of London concert life. It would have a global effect. With these buildings the influence goes way beyond the art form"<span>— Esa-Pekka Salonen</span></div>
+    </div>
+    <div class="main-wrapper">
+      <h2>Acoustics: Yasuhisa Toyota</h2>
+      <p>The Concert Hall will be an inspiring visual experience, a truly flexible space, with state-of-the art acoustics: with the benefits of the intimacy and sight-lines of the ‘vineyard’ design, within the warmer enveloping reverberations of the ‘shoebox’.</p>
+      <video src="/video/yasuhisa.mp4" controls poster="/video/yasuhisa-poster.jpg"></video>
+    </div>
+    <%- include('footer'); %>
+</body>
+
+</html>

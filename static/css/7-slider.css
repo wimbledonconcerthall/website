@@ -1,0 +1,12 @@
+.slider {
+  overflow-x: scroll;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.slider div {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  margin-right: 42px;
+}

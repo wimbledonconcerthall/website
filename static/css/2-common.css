@@ -73,30 +73,45 @@ blockquote p {
   width: 16px;
 }
 
-#modal-consent {
-  align-items: self-end;
+.two-columns-slide,
+.flex-columns {
+  display: flex;
+  flex-direction: column;
 }
 
-dialog article {
-  margin: 0;
+.banner-quote {
+  padding: 40px 20px;
+  background-color: var(--banner-background-color);
+  font-size: 24px;
+  text-align: center;
+}
+.banner-quote span {
+  display: block;
+  margin-top: 14px;
+  font-size: 16px;
+}
+video {
+  width: 100%;
+  margin-bottom: 48px;
 }
 
-dialog header,
-dialog footer {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-dialog header {
-  margin-bottom: 8px;
-}
-
-dialog footer {
-  margin-top: 8px;
-}
-
-dialog button {
-  width: auto;
-  display: inline-block;
-  margin-bottom: 0;
+@media (min-width: 769px) {
+  .banner-quote {
+    padding: 120px 100px;
+    font-size: 28px;
+  }
+  .banner-quote span {
+    font-size: 20px;
+  }
+  .two-columns-slide,
+  .flex-columns {
+    flex-direction: row;
+  }
+  .two-columns-slide div,
+  .flex-columns div {
+    width: 50%;
+  }
+  .two-columns-slide div:first-child {
+    margin-right: 24px;
+  }
 }
