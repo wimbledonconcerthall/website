@@ -92,7 +92,27 @@ blockquote p {
 }
 video {
   width: 100%;
-  margin-bottom: 48px;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: block;
+}
+.pink {
+  background-color: #E06996;
+  color: white;
+}
+
+.orange {
+  background-color: #F78568;
+  color: white;
+}
+
+.ochre {
+  background-color: #FFCF7D;
+  color: black;
+}
+.dark {
+  background-color: #020202;
+  color: white;
 }
 
 @media (min-width: 769px) {
@@ -113,5 +133,9 @@ video {
   }
   .two-columns-slide div:first-child {
     margin-right: 24px;
+  }
+  video {
+    margin-bottom: 42px;
+    padding: 0 var(--gutter);
   }
 }

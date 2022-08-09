@@ -4,27 +4,26 @@
   <%- include('head'); %>
   <style>
     .hero {
-      width: 100%;
-      height: fit-content;
-      margin-bottom: var(--gutter);
+      position: relative;
     }
     .hero img {
       width: 100%;
     }
-    .hero h2 {
+    .hero:after {
+      content: '';
       position: absolute;
-      font-size: 24px;
-      max-width: 600px;
-      margin-top: var(--gutter);
-      color: white;
-    }
-    .hero h2 > div {
-      font-size: 18px;
-      margin-top: var(--gutter);
+      width: 100%;
+      height: 50px;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to bottom, #020202, #02020200);
     }
     .floor-plan {
       display: flex;
       flex-direction: column;
+    }
+    h3 {
+      margin-top: 42px;
     }
     .floor-plan img {
       border: 1px solid var(--form-element-border-color);
@@ -39,11 +38,8 @@
       text-align: left;
     }
     @media (min-width: 769px) {
-      .hero h2 {
-        font-size: 36px;
-      }
-      .hero h2 > div {
-        font-size: 26px;
+      .hero-quote {
+        padding: 50px 100px;
       }
       .floor-plan {
         flex-direction: row;
@@ -53,10 +49,11 @@
 </head>
 <body>
   <%- include('header'); %>
-  <div class="hero">
-    <div class="main-wrapper" style="position: relative">
-      <h2>“The great concert halls of the world inspire, and leave a strong intergenerational legacy”<div>- Dame Darcey Bussell, Patron</div></h2>
+  <div class="dark banner-quote hero-quote">
+    <div class="main-wrapper">The great concert halls of the world inspire, and leave a strong intergenerational legacy”<span>- Dame Darcey Bussell, Patron</span>
     </div>
+  </div>
+  <div class="hero">
     <figure>
       <picture>
         <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/collage.webp" />
@@ -71,7 +68,9 @@
   <div class="main-wrapper">
     <h3>Music gives wings to the soul</h3>
     <p>The great concert halls of the world have the power to change lives and inspire  etc.../ Gehry in his studio and sync ““Concert hall projects are the most exciting for me - ... I prioritize them over living practically “To have a Frank Gehry-designed concert hall in Wimbledon would be a total transformation of London concert life.  It would have a global effect.</p>
-    <video src="/video/intro.mp4" controls poster="/video/intro-poster.jpg"></video>
+  </div>
+  <video src="/video/intro.mp4" controls poster="/video/intro-poster.jpg"></video>
+  <div class="main-wrapper">
     <h3>The vision</h3>
     <div class="two-columns-slide">
       <div>
@@ -141,9 +140,8 @@
     </figure>
     </div>
     <h3>Interview: Frank Gehry and John Wilson - June 2022</h3>
-    <video src="/video/interview.mp4" controls poster="/video/interview-poster.jpg"></video>
-    <%- content %>
   </div>
+  <video src="/video/interview.mp4" controls poster="/video/interview-poster.jpg"></video>
   <div class="banner-quote">
     <div class="main-wrapper">“There’s a lot that happens around music that is exciting. The Kids get involved. It opens doors in their minds and gives them part of a bigger world.” <span>-  Frank Gehry</span></div>
   </div>

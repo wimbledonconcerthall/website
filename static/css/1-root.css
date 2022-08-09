@@ -246,10 +246,11 @@ figure {
 }
 
 figure figcaption {
-  padding: calc(var(--spacing) * .5) 0;
+  padding: calc(var(--spacing) * .5) var(--gutter);
   color: var(--muted-color);
   text-align: center;
   font-size: 16px;
+  white-space: initial;
 }
 
 sub,

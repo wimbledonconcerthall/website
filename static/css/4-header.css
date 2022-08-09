@@ -176,6 +176,11 @@
     font-size: 18px;
   }
 
+  #main-menu .logo-symbol {
+    width: 40px;
+    height: 28px;
+  }
+
   #main-menu .header-button svg {
     width: 20px;
     height: 20px;
