@@ -55,10 +55,11 @@
   transition: --offset 300ms, text-decoration-color 300ms;
 }
 
-#main-menu ul li a.active {
+#main-menu ul li.active a {
   color: var(--primary);
 }
 
+#main-menu ul li.active a,
 #main-menu ul li a:focus,
 #main-menu ul li a:hover {
   text-decoration-color: var(--primary);
@@ -139,8 +140,8 @@
 }
 
 #close-side-menu svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 .right-controls {

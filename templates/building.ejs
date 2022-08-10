@@ -4,6 +4,18 @@
 <head>
   <%- include('head'); %>
   <style>
+    .submenu {
+      background-color: var(--banner-background-color);
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    .submenu .main-wrapper {
+      text-align: center;
+    }
+    .submenu a {
+      text-decoration: none;
+      width: 50%;
+    }
     h2 {
       margin-top: 42px;
     }
@@ -12,6 +24,11 @@
 
 <body>
   <%- include('header'); %>
+  <div class="submenu">
+    <div class="main-wrapper">
+      <a href="#architect">Architect: Frank Gehry</a> — <a href="#acoustics">Acoustics: Yasuhisa Toyota</a>
+    </div>
+  </div>
   <div class="pink banner-quote">
     <div class="main-wrapper">"Gehry has been called the most important architect of our age and it’s hard to
       disagree. His awe-inspiring structures have become must-visit destinations"
@@ -19,7 +36,7 @@
     </div>
   </div>
   <div class="main-wrapper">
-    <h2>Architect: Frank Gehry</h2>
+    <h2 id="architect">Architect: Frank Gehry</h2>
     <div class="two-columns-slide">
       <div>
         <p>Born in 1929. Age 93</p>
@@ -163,71 +180,61 @@
       masterfully"<span>— Architectural Digest</span></div>
   </div>
   <div class="flex-columns">
-    <div>
-      <figure>
-        <picture>
-          <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/bilbao.webp" />
-          <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/bilbao.png" />
-          <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/bilbao-mobile.webp" />
-          <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/bilbao-mobile.png" />
-          <img class="image" src="/building/images/bilbao.png" alt="Guggenheim Museum, Bibao">
-        </picture>
-        <figcaption>Guggenheim Museum, Bibao</figcaption>
-      </figure>
-    </div>
-    <div>
-      <figure>
-        <picture>
-          <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/vuitton.webp" />
-          <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/vuitton.png" />
-          <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/vuitton-mobile.webp" />
-          <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/vuitton-mobile.png" />
-          <img class="image" src="/building/images/vuitton.png" alt="Louis Vuitton Foundation, Paris">
-        </picture>
-        <figcaption>Louis Vuitton Foundation, Paris</figcaption>
-      </figure>
-    </div>
-    <div>
-      <figure>
-        <picture>
-          <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/dancing.webp" />
-          <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/dancing.png" />
-          <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/dancing-mobile.webp" />
-          <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/dancing-mobile.png" />
-          <img class="image" src="/building/images/dancing.png" alt="Fred and Ginger, The Dancing House, Prague">
-        </picture>
-        <figcaption>Fred and Ginger, The Dancing House, Prague</figcaption>
-      </figure>
-    </div>
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/bilbao.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/bilbao.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/bilbao-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/bilbao-mobile.png" />
+        <img class="image" src="/building/images/bilbao.png" alt="Guggenheim Museum, Bibao">
+      </picture>
+      <figcaption>Guggenheim Museum, Bibao</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/vuitton.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/vuitton.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/vuitton-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/vuitton-mobile.png" />
+        <img class="image" src="/building/images/vuitton.png" alt="Louis Vuitton Foundation, Paris">
+      </picture>
+      <figcaption>Louis Vuitton Foundation, Paris</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/dancing.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/dancing.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/dancing-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/dancing-mobile.png" />
+        <img class="image" src="/building/images/dancing.png" alt="Fred and Ginger, The Dancing House, Prague">
+      </picture>
+      <figcaption>Fred and Ginger, The Dancing House, Prague</figcaption>
+    </figure>
   </div>
   <div class="main-wrapper">
     <h3>The Wimbledon Concert Hall seeks to join these outstanding Gehry halls</h3>
   </div>
   <div class="flex-columns">
-    <div>
-      <figure>
-        <picture>
-          <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/miami.webp" />
-          <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/miami.png" />
-          <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/miami-mobile.webp" />
-          <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/miami-mobile.png" />
-          <img class="image" src="/building/images/miami.png" alt="New World Symphony, Miami">
-        </picture>
-        <figcaption>New World Symphony, Miami</figcaption>
-      </figure>
-    </div>
-    <div>
-      <figure>
-        <picture>
-          <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/disney.webp" />
-          <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/disney.png" />
-          <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/disney-mobile.webp" />
-          <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/disney-mobile.png" />
-          <img class="image" src="/building/images/disney.png" alt="Walt Disney, Los Angeles">
-        </picture>
-        <figcaption>Walt Disney, Los Angeles</figcaption>
-      </figure>
-    </div>
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/miami.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/miami.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/miami-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/miami-mobile.png" />
+        <img class="image" src="/building/images/miami.png" alt="New World Symphony, Miami">
+      </picture>
+      <figcaption>New World Symphony, Miami</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/disney.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/disney.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/disney-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/disney-mobile.png" />
+        <img class="image" src="/building/images/disney.png" alt="Walt Disney, Los Angeles">
+      </picture>
+      <figcaption>Walt Disney, Los Angeles</figcaption>
+    </figure>
   </div>
   <div class="banner-quote ochre">
     <div class="main-wrapper">"All were made possible by large-scale philanthropic gifts; all have become famous
@@ -240,12 +247,94 @@
       way beyond the art form"<span>— Esa-Pekka Salonen</span></div>
   </div>
   <div class="main-wrapper">
-    <h2>Acoustics: Yasuhisa Toyota</h2>
+    <h2 id="acoustics">Acoustics: Yasuhisa Toyota</h2>
     <p>The Concert Hall will be an inspiring visual experience, a truly flexible space, with state-of-the art
       acoustics: with the benefits of the intimacy and sight-lines of the ‘vineyard’ design, within the warmer
       enveloping reverberations of the ‘shoebox’.</p>
   </div>
   <video src="/video/yasuhisa.mp4" controls poster="/video/yasuhisa-poster.jpg"></video>
+  <div class="banner-quote ochre">
+    <div class="main-wrapper">"Designing a hall is something like making, or creating, an instrument like a violin"<span>— Yasuhisa Toyota</span></div>
+  </div>
+  <figure>
+    <picture>
+      <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/yasuhisa.webp" />
+      <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/yasuhisa.png" />
+      <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/yasuhisa-mobile.webp" />
+      <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/yasuhisa-mobile.png" />
+      <img class="image" src="/building/images/yasuhisa.png" alt="Yasuhisa Toyota">
+    </picture>
+  </figure>
+  <div class="main-wrapper">
+    <h3>Yasuhisa Toyota is regarded as the greatest exponent of the modern <i>vineyard design</i>. He has designed the acoustics for over fifty of the world&quote;s great halls</h3>
+  </div>
+  <div class="banner-quote">
+    <div class="main-wrapper">"The <i>vineyard style</i> within a <i>shoebox</i> has big advantages not only for acoustics, but the intimacy adds enormously to the concert experience"<span>— Yasuhisa Toyota</span></div>
+  </div>
+  <div class="flex-columns">
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/suntory.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/suntory.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/suntory-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/suntory-mobile.png" />
+        <img class="image" src="/building/images/suntory.png" alt="Suntory, Tokyo">
+      </picture>
+      <figcaption>Suntory, Tokyo</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/kitara.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/kitara.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/kitara-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/kitara-mobile.png" />
+        <img class="image" src="/building/images/kitara.png" alt="Kitara, Sapporo">
+      </picture>
+      <figcaption>Kitara, Sapporo</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/elbphilharmonie.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/elbphilharmonie.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/elbphilharmonie-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/elbphilharmonie-mobile.png" />
+        <img class="image" src="/building/images/elbphilharmonie.png" alt="Elbphilharmonie, Hamburg">
+      </picture>
+      <figcaption>Elbphilharmonie, Hamburg</figcaption>
+    </figure>
+  </div>
+  <div class="flex-columns">
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/disney2.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/disney2.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/disney2-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/disney2-mobile.png" />
+        <img class="image" src="/building/images/disney2.png" alt="Walt Disney, Los Angeles">
+      </picture>
+      <figcaption>Walt Disney, Los Angeles</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/new-world-symphony.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/new-world-symphony.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/new-world-symphony-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/new-world-symphony-mobile.png" />
+        <img class="image" src="/building/images/new-world-symphony.png" alt="New World Symphony, Miami">
+      </picture>
+      <figcaption>New World Symphony, Miami</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/boulez.webp" />
+        <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/boulez.png" />
+        <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/boulez-mobile.webp" />
+        <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/boulez-mobile.png" />
+        <img class="image" src="/building/images/boulez.png" alt="Boulez Saal, Berlin">
+      </picture>
+      <figcaption>Boulez Saal, Berlin</figcaption>
+    </figure>
+  </div>
   <%- include('footer'); %>
 </body>
 

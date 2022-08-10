@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .main-wrapper {
   padding: 0 var(--gutter);
   max-width: var(--content-max-width);
