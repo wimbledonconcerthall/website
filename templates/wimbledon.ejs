@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+
+<head>
+  <%- include('head'); %>
+    <style>
+      h2 {
+        margin-top: 42px;
+      }
+    </style>
+</head>
+
+<body>
+  <%- include('header'); %>
+  <div class="green banner-quote">
+    <div class="main-wrapper">Wimbledon is one of the most desirable suburbs of London, a world brand known for its Tennis Championship.  It is celebrated for its green spaces and Common, reflected in Gehry's design with its several roof gardens.
+    </div>
+  </div>
+  <div class="main-wrapper">
+    <h2>The perfect site</h2>
+    <div class="two-columns-slide">
+      <ul>
+        <li>Currently an open-air car park owned by Merton Council, offering the concert hall an exclusive development period</li>
+        <li>200 yards from Wimbledon Station (less than the length of a 10-carriage train)</li>
+        <li>4 million live within half an hour</li>
+      </ul>
+      <ul>
+        <li>A Major transport hub:<ul>
+          <li>South West trains (15 mins. from Waterloo Station)</li>
+          <li>District Line</li>
+          <li>Crossrail & Crosslink</li>
+          <li>Croydon Tram</li>
+          <li>Nine bus routes</li>
+          <li>A3 road corridor</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <video src="/video/wimbledon.mp4" controls poster="/video/wimbledon-poster.jpg"></video>
+    <h2>An established musical and cultural reputation</h2>
+    <%- content %>
+  </div>
+  <%- include('footer'); %>
+</body>
+
+</html>

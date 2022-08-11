@@ -8,6 +8,10 @@ html {
   margin: 0 auto;
 }
 
+.main-wrapper video {
+  padding: 0;
+}
+
 .content h1 {
   margin: 16px 0;
 }
