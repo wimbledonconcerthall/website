@@ -140,13 +140,12 @@ video {
     margin-right: 24px;
   }
   video {
-    margin-bottom: 42px;
     padding: 0 var(--gutter);
   }
 }
 
-.wrap-collabsible.with-margin {
-  margin-bottom: 40px;
+.wrap-collabsible {
+  margin-bottom: 42px;
 }
 
 input[type='checkbox'] {
@@ -155,15 +154,14 @@ input[type='checkbox'] {
 
 .lbl-toggle {
   display: block;
-  font-weight: bold;
-  font-family: monospace;
   text-transform: uppercase;
-  text-align: center;
   padding: 1rem;
   background: var(--banner-background-color);
   cursor: pointer;
-  border-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   transition: all 0.25s ease-out;
+  margin: 0;
 }
 
 .lbl-toggle:hover {
