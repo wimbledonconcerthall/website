@@ -3,17 +3,16 @@ title: "Wimbledon & Merton"
 template: wimbledon
 ---
 
-[Logos]
-- Wimbledon International Music Festival.
-- ‘Jewel in London’s Cultural Crown’ Jessica Duchen, Independent,
-- ‘One of the Capitals major autumn events’ Evening standard
-- ‘One of the most distinguished festivals in the UK’ Musical Opinion
-- ‘A roster you would only expect at one of Europe’s major festivals, such as Lucerne, Edinburgh and Salzburg” Robin O’Neill, Philharmonia, Conductor
-- Wimbledon BookFest: London’s leading literary festival
-- New Wimbledon Theatre [1500 seats] ATG
-- Polka Theatre.  UK’s major children’s theatre - recent major refurbishment
-- Odeon and Curzon cinema chains
-- Merton Art Trail
+- **[Wimbledon International Music Festival](https://wimbledonmusicfestival.co.uk/)**:
+    - ‘Jewel in London’s Cultural Crown’ Jessica Duchen, Independent,
+    - ‘One of the Capitals major autumn events’ Evening standard
+    - ‘One of the most distinguished festivals in the UK’ Musical Opinion
+    - ‘A roster you would only expect at one of Europe’s major festivals, such as Lucerne, Edinburgh and Salzburg” Robin O’Neill, Philharmonia, Conductor
+- **[Wimbledon BookFest](https://www.wimbledonbookfest.org/)**: London’s leading literary festival
+- **[New Wimbledon Theatre](http://newwimbledontheatre.net/)**: 1500 seats. [ATG Tickets](https://www.atgtickets.com/venues/new-wimbledon-theatre/)
+- **[Polka Theatre](https://polkatheatre.com/)**: UK’s major children’s theatre - recent major refurbishment
+- [Odeon](https://www.odeon.co.uk) and [Curzon](https://www.curzon.com) cinema chains
+- [Merton Art Trail](https://www.mertonpriory.org/news/merton-arts-trail-exhibition/)
 - Lively choral, music, dance and art scene
 
 A Gehry Concert Hall would transform Wimbledon and Merton into an important international cultural destination. 
