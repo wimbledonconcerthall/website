@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+
+<head>
+  <%- include('head'); %>
+    <style>
+      h2 {
+        margin-top: 42px;
+      }
+    </style>
+</head>
+
+<body>
+  <%- include('header'); %>
+  <div class="ochre banner-quote">
+    <div class="main-wrapper">We're quickly looking for supporters who want to leave a lasting legacy.<br />As Frank Gehry himself has told us, “I'm not sure how much more time I'll have”.<br />We need to secure the site and formally commission Frank and his team. The initial investment we need is about £9 million. Want to get involved? <a href="/contact">Please get in touch.</a>
+    </div>
+  </div>
+  <div class="main-wrapper">
+    <h2>Call to Action</h2>
+    <video src="/video/donors.mp4" controls poster="/video/donors-poster.jpg"></video>
+    <div class="wrap-collabsible">
+      <input id="collapsible" class="toggle" type="checkbox">
+      <label for="collapsible" class="lbl-toggle">Video transcript</label>
+      <div class="collapsible-content">
+        <div class="content-inner">
+          <p>David Whelton: I’m standing in front of the Albert Memorial, a memorial to one of the great nineteenth century visionaries. We are looking for a similar visionary today to help us realise our ambition for a new concert hall for Wimbledon.</p>
+          <p>Darcey Bussell: And Wimbledon can offer the perfect site. There is a compelling vision of what is possible here. We have Frank Gehry and his extraordinary team. We have a location and a brand. We just need now a visionary Patron to make it happen.</p>
+          <p>Frank Gehry: We’ve got to do this.</p>
+        </div>
+      </div>
+    </div>
+    <h2>Philantropic opportunity</h2>
+    <p>The Trust would like to encourage the financing of this project through philanthropic gifts, and not to call on public funding.</p>
+    <p><a href="https://www.globalphilanthropic.com" target="_blank">Global Philaanthropic</a>, the Fundraising Team, would be happy to <a href="/contact">arrange a meeting to discuss this with you</a>.</p>
+  </div>
+  <div class="banner-quote">
+    <div class="main-wrapper">"The Wimbledon Concert Hall project offers a rare opportunity for a philanthropist to make possible, and to be actively involved in, the creation of a major centre of international cultural importance by one of the most celebrated architects.”<span>— Ben Morton Wright</span></div>
+  </div>
+  <div class="main-wrapper">
+    <%- content %>
+  </div>
+  <%- include('footer'); %>
+</body>
+
+</html>
