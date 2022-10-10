@@ -102,6 +102,9 @@ blockquote p {
 .banner-quote.bg4 {
   background-image: url(/img/bg4.png);
 }
+.banner-quote.bg5 {
+  background-image: url(/img/bg5.png);
+}
 .banner-quote span {
   display: block;
   margin-top: 14px;

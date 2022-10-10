@@ -1,12 +1,11 @@
 ---
 title: "Community"
+template: community
 ---
 
-## Education
+## Community
 
-“There’s a lotof stuff that happens around music that is exciting. It’s going to bring joy to the community, pride to the community. It’s part of the community” - Frank Gehry
-
-Wimbledon and Merton currently present separate communities waiting for the opportunities presented the cultural hub to come together. The Trust will work closely in collaboration with Merton Music Foundation - an Arts Council Music Education hub - to bring striking opportunities to Merton school children
+Wimbledon and Merton currently present separate communities waiting for the opportunities presented the cultural hub to come together. The Trust will work closely in collaboration with Merton Music Foundation - an Arts Council Music Education hub - to bring striking opportunities to Merton school children.
 
 ‘The Kids Get Involved... It opens doors in their minds’
 

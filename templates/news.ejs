@@ -3,10 +3,75 @@
 
 <head>
   <%- include('head'); %>
+  <style>
+    .banner-quote {
+      padding: 24px 100px;
+      margin-bottom: 42px;
+    }
+    .temp-post {
+      margin-bottom: 42px;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    .date {
+      color: var(--muted-color);
+      margin-bottom: 24px;
+    }
+    img {
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
   <%- include('header'); %>
+  <div class="ochre banner-quote">
+    <div class="main-wrapper">Latest news and updates</div>
+  </div>
+  <div class="main-wrapper">
+    <div class="temp-post">
+      <h2>Wimbledon Time & Leisure magazine article</h2>
+      <div class="date">Published on September 2022</div>
+      <div class="two-columns-slide">
+        <div>
+          <a href="/docs/t-and-l-september-2022.pdf" target="_blank">
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="/news/images/t-and-l-september-2022.webp" />
+                <source type="image/jpeg" srcset="/news/images/t-and-l-september-2022.png" />
+                <img class="image" src="/news/images/t-and-l-september-2022.jpg" alt="Wimbledon Time & Leisure magazine article">
+              </picture>
+            </figure>
+          </a>
+        </div>
+        <div>
+          <p>Architects whose names are instantly recognised by those outside architectural circles are few and far between. But Frank Gehry is one of them. With his striking design for the Guggenheim Museum he put Bilbao on the map. His other world-renowned projects include New World Symphony, Miami, and the Walt Disney Concert Hall in Los Angeles. And his next building could be in Wimbledon...</p>
+          <p>The idea for a Gehry-designed concert hall has been mooted for a while but, significantly, Merton Council has now agreed to an exclusivity period to work with the Wimbledon Concert Hall Trust to develop proposals for the council's Hartfield Road car park. The trust is keen not to call on any public funding but is looking for investment from businesses and individuals, with 'naming rights' on offer so they can be recognised for their support. <a href="/docs/t-and-l-september-2022.pdf" target="_blank">Read More...</a></p>
+        </div>
+      </div>
+    </div>
+    <h2>Interview: Esa-Pekka Salonen</h2>
+    <div class="date">Published on August 2022</div>
+  </div>
+  <div class="temp-post">
+    <video src="/video/esa-pekka.mp4" controls poster="/video/esa-pekka-poster.jpg"></video>
+    <div class="wrap-collabsible">
+      <input id="collapsible" class="toggle" type="checkbox">
+      <label for="collapsible" class="lbl-toggle" tabindex="0">Video transcript</label>
+      <div class="collapsible-content">
+        <div class="content-inner">
+          <p>Esa-Pekka Salonen: One of the most exciting and satisfying and rewarding thing I've ever done in my life as a conductor was the project of building the Walt Disney Concert Hall in Los Angeles. And Frank Gehry is the perfect architect for designing a new concert hall. He knows how to work with acousticians. He knows what orchestras need, he knows what music needs. So it will be fantastic to have a new concert hall designed by Frank Gehry in London.</p>
+          <p>Question: What would it mean to Wimbledon to bring a concert hall to the suburbs?</p>
+          <p>Esa-Pekka Salonen: A concert hall, a good one, functions on many different levels in its environment. Partly it's about the music and the performing music and so on. But it also sends a message to the community. It sends a message outside the community, it often becomes a symbol and more than that, it becomes a hub for for all kinds of educational projects. Local groups, a great concert hall stimulates the artistic and intellectual life in the community and it strengthens the community itself.</p>
+          <p>Question: What does a Frank Gehry building bring economically?</p>
+          <p>Esa-Pekka Salonen: What happened in downtown Los Angeles after the Walt Disney Concert Hall opened was quite dramatic. In within the first year of its existence, the number of services, such as restaurants and hotels, and so on, had more than doubled. And now 15 years later, the renaissance of downtown Los Angeles started with the construction of Walt Disney Concert Hall.</p>
+          <p>Question: What are your thoughts on the Guggenheim in Bilbao?</p>
+          <p>Esa-Pekka Salonen: I have a great memory of the Bilbao Hall. And I never forget this moment. We had a very grumpy taxi driver from the airport. Then there's a moment when the taxi driver turned towards us and said "El Museo" with such pride that I understood that it was much more than just a museum. It became a symbol of the new life of Bilbao. And when we walked around in downtown Bilbao with Frank Gehry people stopped him on the streets and thanked him for what he had done for the city. And, you know, they brought the little babies for Frank to bless. And, and he could not pay for any meal. He tried to but but every restaurant said, well, we can possibly charge you Mr. Thery, because you have helped us so much. And so these buildings, the influence goes way beyond the art form itself. And do you have a Frank Gehry design a concert hall in Wimbledon would be a total transformation of London concert life, it would have a global effect.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <%- include('footer'); %>
 </body>
 

@@ -1,5 +1,5 @@
 ---
-title: WCH
+title: News
 template: news
 shouldHideTitle: true
 ---

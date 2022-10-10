@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+
+<head>
+  <%- include('head'); %>
+    <style>
+      h2 {
+        margin-top: 42px;
+      }
+    </style>
+</head>
+
+<body>
+  <%- include('header'); %>
+  <div class="orange banner-quote bg bg5">
+    <div class="main-wrapper">"There’s a lotof stuff that happens around music that is exciting. It's going to bring joy to the community, pride to the community. It's part of the community"<span>—  Frank Gehry</span>
+    </div>
+  </div>
+  <div class="main-wrapper">
+    <%- content %>
+  </div>
+  <%- include('footer'); %>
+</body>
+
+</html>
