@@ -85,6 +85,23 @@ blockquote p {
   font-size: 24px;
   text-align: center;
 }
+.banner-quote.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-quote.bg1 {
+  background-image: url(/img/bg1.png);
+}
+.banner-quote.bg2 {
+  background-image: url(/img/bg2.png);
+}
+.banner-quote.bg3 {
+  background-image: url(/img/bg3.png);
+}
+.banner-quote.bg4 {
+  background-image: url(/img/bg4.png);
+}
 .banner-quote span {
   display: block;
   margin-top: 14px;
@@ -115,37 +132,19 @@ video {
   background-color: #FFCF7D;
   color: black;
 }
+.red {
+  background-color: #C13B4F;
+  color: white;
+}
 .dark {
   background-color: #020202;
   color: white;
 }
 
-@media (min-width: 769px) {
-  .banner-quote {
-    padding: 120px 100px;
-    font-size: 28px;
-  }
-  .banner-quote span {
-    font-size: 20px;
-  }
-  .two-columns-slide,
-  .flex-columns {
-    flex-direction: row;
-  }
-  .two-columns-slide > *,
-  .flex-columns > * {
-    width: 50%;
-  }
-  .two-columns-slide > *:first-child {
-    margin-right: 24px;
-  }
-  video {
-    padding: 0 var(--gutter);
-  }
-}
-
 .wrap-collabsible {
-  margin-bottom: 42px;
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto 42px;
 }
 
 input[type='checkbox'] {
@@ -155,11 +154,9 @@ input[type='checkbox'] {
 .lbl-toggle {
   display: block;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: var(--gutter);
   background: var(--banner-background-color);
   cursor: pointer;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   transition: all 0.25s ease-out;
   margin: 0;
 }
@@ -191,7 +188,7 @@ input[type='checkbox'] {
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 2000px;
+  max-height: 5000px;
 }
 
 .toggle:checked + .lbl-toggle {
@@ -201,7 +198,33 @@ input[type='checkbox'] {
 
 .collapsible-content .content-inner {
   background: var(--secondary-focus);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   padding: .8rem 1rem;
+}
+
+@media (min-width: 769px) {
+  .banner-quote {
+    padding: 120px 100px;
+    font-size: 28px;
+  }
+  .banner-quote span {
+    font-size: 20px;
+  }
+  .two-columns-slide,
+  .flex-columns {
+    flex-direction: row;
+  }
+  .two-columns-slide > *,
+  .flex-columns > * {
+    width: 50%;
+  }
+  .two-columns-slide > *:first-child {
+    margin-right: 24px;
+  }
+  video, .wrap-collabsible {
+    padding: 0 var(--gutter);
+  }
+  .lbl-toggle, .collapsible-content .content-inner {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
 }

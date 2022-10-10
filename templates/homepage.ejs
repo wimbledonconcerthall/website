@@ -41,6 +41,9 @@
       .hero-quote {
         padding: 50px 100px;
       }
+      .hero-quote .main-wrapper {
+        max-width: 800px;
+      }
       .floor-plan {
         flex-direction: row;
       }
@@ -68,26 +71,27 @@
   <div class="main-wrapper">
     <h3>Music gives wings to the soul</h3>
     <p>The great concert halls of the world have the power to change lives and inspire. To have a Frank Gehry-designed concert hall in Wimbledon would be a total transformation of London concert life. It would have a global effect.</p>
-    <video src="/video/intro.mp4" controls poster="/video/intro-poster.jpg"></video>
-    <div class="wrap-collabsible">
-      <input id="collapsible" class="toggle" type="checkbox">
-      <label for="collapsible" class="lbl-toggle" tabindex="0">Video transcript</label>
-      <div class="collapsible-content">
-        <div class="content-inner">
-          <p>Caption: In search of a new concert hall for London in Wimbledon.</p>
-          <p>Narrator: "Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything" — Plato</p>
-          <p>Darcey Bussell: Hello, my name is Darcey Bussell and I'm an artistic patron of the Wimbledon Concert Hall project. The great concert halls of the world have the power to change lives and inspire. To leave a strong intergenerational legacy. London has a great need for a world-class hall, and Wimbledon can offer the perfect site.</p>
-          <p>Narrator: Frank Gehry is the architect whose flights of imagination have given wings and soul to music itself.</p>
-          <p>Frank Gehry: Finally I've pushed the two concert halls together, and it seems they come alive.</p>
-          <p>Narrator: He is the master designer of some of the world's most exceptional halls. We have come to see Frank Gehry to begin work on a new concert hall for London in Wimbledon.</p>
-          <p>Frank Gehry: Concert hall projects are the most exciting for me and I prioritize them over living practically. I love doing them, because I love the culture and I love the people. I love the music. I love the challenge of it. I think, if you make a proper room for music that people wanna go to, they are gonna come from everywhere. If there many of those places. </p>
-          <p>Esa Pekka Salonen: Having Frank Ghery doing a concert hall in Wimbledon would be a total transformation of London concert life. It would have a global effect. So, these buildings, the influence goes way beyond the art-form itself.</p>
-        </div>
+  </div>
+  <video src="/video/intro.mp4" controls poster="/video/intro-poster.jpg"></video>
+  <div class="wrap-collabsible">
+    <input id="collapsible" class="toggle" type="checkbox">
+    <label for="collapsible" class="lbl-toggle" tabindex="0">Video transcript</label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <p>Caption: In search of a new concert hall for London in Wimbledon.</p>
+        <p>Narrator: "Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything" — Plato</p>
+        <p>Darcey Bussell: Hello, my name is Darcey Bussell and I'm an artistic patron of the Wimbledon Concert Hall project. The great concert halls of the world have the power to change lives and inspire. To leave a strong intergenerational legacy. London has a great need for a world-class hall, and Wimbledon can offer the perfect site.</p>
+        <p>Narrator: Frank Gehry is the architect whose flights of imagination have given wings and soul to the music itself.</p>
+        <p>Frank Gehry: Finally I've pushed the two concert halls together, and it seems they come alive.</p>
+        <p>Narrator: He is the master designer of some of the world's most exceptional halls. We have come to see Frank Gehry begin work on a new concert hall for London in Wimbledon.</p>
+        <p>Frank Gehry: Concert hall projects are the most exciting for me and I prioritize them over living practically. I love doing them because I love the culture and I love the people. I love the music. I love the challenge of it. I think, if you make a proper room for music that people wanna go to, they are gonna come from everywhere. If there many of those places. </p>
+        <p>Esa Pekka Salonen: Having Frank Ghery doing a concert hall in Wimbledon would be a total transformation of London concert life. It would have a global effect. So, these buildings, the influence goes way beyond the art-form itself.</p>
       </div>
     </div>
+  <div class="main-wrapper">
     <h3>Imagine</h3>
     <p>An inspirational, sculptural, presence at the heart of a city. You are attracted by its beguiling shapes. It welcomes you in. This building has a soul. You become aware of a community of people. People enjoying art classes, and educational facilities, with children in play areas.</p>
-    <p>And just through those walls, you know is a beautiful hall — one of the great concert halls in the world, where the best artists, and the finest orchestras play.</p>
+    <p>And just through those walls, you know is a beautiful hall — one of the great concert halls in the world, where the best artists and the finest orchestras play.</p>
     <p>Imagine being embraced in the intimacy where performers connect with the audience, and you with them. The musical colours, the air with such a quality of sound as you have never experienced before. The magic of <a href="/building#acoustics">Yasuhisa Toyota, the master acoustician</a>.</p>
     <p>And Imagine that you could be witness to <a href="/building#architect">the legendary Frank Gehry</a> at work. That you could help give birth to this... that <a href="/donors">it could be you who can make possible this</a> last great cultural building by the world's greatest living architect. That it could be your philanthropic generosity that "gives soul to the universe, wings to the imagination, and life to everything".</p> 
   </div>
@@ -143,41 +147,52 @@
     </div>
     <div class="floor-plan">
       <figure>
-      <picture>
-        <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-3.webp" />
-        <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-3.png" />
-        <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-3-mobile.webp" />
-        <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-3-mobile.png" />
-        <img class="image" src="/home/images/floor-plan-3.png" alt="Floor Plan 3">
-      </picture>
-      <figcaption><b>Level 02 Floor Plan</b></figcaption>
-    </figure>
+        <picture>
+          <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-3.webp" />
+          <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-3.png" />
+          <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-3-mobile.webp" />
+          <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-3-mobile.png" />
+          <img class="image" src="/home/images/floor-plan-3.png" alt="Floor Plan 3">
+        </picture>
+        <figcaption><b>Level 02 Floor Plan</b></figcaption>
+      </figure>
       <figure>
-      <picture>
-        <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-4.webp" />
-        <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-4.png" />
-        <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-4-mobile.webp" />
-        <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-4-mobile.png" />
-        <img class="image" src="/home/images/floor-plan-4.png" alt="Floor Plan 4">
-      </picture>
-      <figcaption><b>Level 03 with Roof Gardens</b> (covered)</figcaption>
-    </figure>
+        <picture>
+          <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/floor-plan-4.webp" />
+          <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/floor-plan-4.png" />
+          <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/floor-plan-4-mobile.webp" />
+          <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/floor-plan-4-mobile.png" />
+          <img class="image" src="/home/images/floor-plan-4.png" alt="Floor Plan 4">
+        </picture>
+        <figcaption><b>Level 03 with Roof Gardens</b> (covered)</figcaption>
+      </figure>
     </div>
     <h3>Interview: Frank Gehry and John Wilson — June 2022</h3>
-    <video src="/video/interview.mp4" controls poster="/video/interview-poster.jpg"></video>
-    <div class="wrap-collabsible with-margin">
-      <input id="collapsible-2" class="toggle" type="checkbox">
-      <label for="collapsible-2" class="lbl-toggle" tabindex="0">Video transcript</label>
-      <div class="collapsible-content">
-        <div class="content-inner">
-          <p>John Wilson: Frank Ghery, great to see you. Wonderful that you can join us from Los Angeles to give us this exclusive preview of your plans for the Wimbledon Concert Hall. Let's start with what I think it's an obvious loved concert hall. You created the Walt Disney concert hall in Los Angeles, 2003 I think and then, Berlin's Pierre Boulez Saal in 2016, the new World Center in Miami 2011, so it's great that Wimbledon will be joining that illustrios list. Why are you so drawn to concert halls first of all, Frank?</p>
-          <p>Frank Ghery: My mother took me to, was in Toronto Canada, growing up. She used to take to Massey Hall and so, Ernest was the conductor. And I got to meet him. bycycle through the park and he was a very gentle and gregarious guy and so, I was a kid in the park. He stopped his bycicle to talk and I realised that he was the conductor. My family name when I was growing up was </p>
-          <p>Work in progress...</p>
-        </div>
+  </div>
+  <video src="/video/interview.mp4" controls poster="/video/interview-poster.jpg"></video>
+  <div class="wrap-collabsible with-margin">
+    <input id="collapsible-2" class="toggle" type="checkbox">
+    <label for="collapsible-2" class="lbl-toggle" tabindex="0">Video transcript</label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <p>John Wilson: Frank Ghery, great to see you. Wonderful that you can join us from Los Angeles to give us this exclusive preview of your plans for the Wimbledon Concert Hall. Let's start with, what I think it's an obviously loved concert hall. You created the Walt Disney Concert Hall in Los Angeles, 2003 I think and then, Berlin's Pierre Boulez Saal in 2016, the new World Center in Miami 2011, so it's great that Wimbledon will be joining that illustrious list. Why are you so drawn to concert halls first of all, Frank?</p>
+        <p>Frank Ghery: My mother took me to, was in Toronto Canada [ahem], growing up and she used to take me to <a href="https://en.wikipedia.org/wiki/Massey_Hall" target="_blank">Massey Hall</a> and so, <a href="https://en.wikipedia.org/wiki/Ernest_MacMillan" target="_blank">Ernest MacMillan</a> was the conductor. And I got to meet him. He used to ride his bicycle through the park and he was a very gentle and gregarious guy and so, I was a kid in the park. He stopped his bicycle to talk and I realised that was the conductor. My family name when I was growing up was Goldberg and so, we lived in Toronto and <a href="https://en.wikipedia.org/wiki/Glenn_Gould" target="_blank">Glenn Gould</a> was doing the <a href="https://en.wikipedia.org/wiki/Goldberg_Variations">Goldberg Variations</a>. So, I was attracted to him and listened to him a lot. And years later, I was invited to be on the <a href="https://en.wikipedia.org/wiki/Glenn_Gould_Foundation" target="_blank">Glenn Gould Foundation</a> and I said I'd join if they'd change the Goldberg Variations to the Ghery Variations. I thought that was fair.</p>
+        <p>John Wilson: Let's look at Wimbledon. What's in store for Wimbledon? With the capacity of, I think it's 1250? So, about 1000 seats fewer than in the Walt Disney Hall in Los Angeles. But in terms of intimacy and contact between musicians and audience, there are obvious advantages to that size, aren't they?</p>
+        <p>Frank Ghery: I think the secret is to create an intimacy with the relationship to the musicians and viceversa. That's the key. Our friend William Shakespeare said that. Said, in a world's stage, do whatever you can to make sure the audience feels the musicians an viceversa. And they enjoy the experience together. I mean, I used to go to Berlin Philharmonic every time I could because, that guy, that architect, knew about intimacy. He created that. It's stunning to go there because you sit down in the concert hall and you're close to everything and it feels good. So, that was the, north star, what do you call it? I forget words now. I'm 93! so ...</p>
+        <p>John Wilson: What would the building look like from the outside? What would we see when Frank Ghery builds it in front of us?</p>
+        <p>Frank Ghery: I like the idea of glass. We've experimented with that. We haven't done one like that. But because of the neighbourhood it's in, the idea that its light is attracted, we could have projections on the exterior. I see it as very flexible, because afterall it's not in a residential district. It's in a shopping district.</p>
+        <p>John Wilson: That'd be a great thing to see but I mean obviously it's about the next generation of music level. As well, it's about kids. And it's about diversifying the potential audience. Introducing people to music who ordinarily wouldn't have access.</p>
+        <p>Frank Ghery: It really works. The kids get involved. It's not that when they grow up they'd become musicians. But it gives them confidence. It opens doors in their minds. It gives them part of a bigger world. It's just incedible what does, but also it brings joy to the community. Pride to the community. If it works, you know, it brings people from all over the world to it. And I've talked to conductors about Wimbledon. There's a lot of interest. They are hoping and praying we can do this because it's very exciting. I've been talking to Esa-Pekka. When I told him about it, he said oh! wow! So, that's the kind of talent you're gonna be able to bring to Wimbledon. Because it's so accessible, I think it's gonna be a knockout in terms of attracting some of the best talent in the world to come there. Without a doubt. If we don't screw up and make the whole nice place that people like to be in. The music and the musicians will do the rest.</p>
+        <p>John Wilson: So the initial drafts, Frank, are there on your drawing board, I guess. What's the next step?</p>
+        <p>Frank Ghery: Well, we have to be sure of the site and its dimensions and its access. Then we have know what building department and burocracy to file for planning and approvals and all kinds of things like that, which is expected. I'm not gonna do anything terrible, but our way of working is very open. So I'd hope we'd be present with models, show and tell with community leaders, people who are interested in supporting this. That's all part of what we go through all the time, so.</p>
+        <p>John Wilson: For those people, Frank, that you think would be backing this project, donating to it, seeing it built. What's your message to them?</p>
+        <p>Frank Ghery: I hope they are interested in the process of how we put this together and would become involved with it. I'm very open and accessible. So, I mean, they might have to travel to LA but I'll bring a lot of stuff over there too.</p>
+        <p>John Wilson: They are gonna be getting one of the great concert halls in the world, I think. Wouldn't they?</p>
+        <p>Frank Ghery: I will do my best. My outmost best. But we are in a hurry because I'm getting a little old. Still working full days, but I think reality is gonna catch up. So, we better hurry. I'd like to hurry and get it go.</p>
       </div>
     </div>
   </div>
-  <div class="banner-quote">
+  <div class="banner-quote pink">
     <div class="main-wrapper">"Concert hall projects are the most exciting for me. I prioritize them over living practically. There's a lot that happens around music that is exciting. The Kids get involved. It opens doors in their minds and gives them part of a bigger world"<span>—  Frank Gehry</span></div>
   </div>
   <%- include('footer'); %>

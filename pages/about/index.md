@@ -1,6 +1,9 @@
 ---
 title: "About us"
+template: about
 ---
+
+## About us
 
 #### The Wimbledon Concert Hall Team
 

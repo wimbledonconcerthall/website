@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+
+<head>
+  <%- include('head'); %>
+  <style>
+    h2 {
+      margin-top: 42px;
+    }
+  </style>
+</head>
+
+<body>
+  <%- include('header'); %>
+  <div class="red banner-quote bg bg4">
+    <div class="main-wrapper">"There's a lot of opportunity to become part of it. I hope they will become involved with it, in the process of how we put this together. A trip to our office might be enlightening. I'll be showing them what we're doing, how we're doing it"<span>— Frank Ghery</span></a>
+    </div>
+  </div>
+  <div class="main-wrapper">
+    <%- content %>
+  </div>
+  <%- include('footer'); %>
+</body>
+
+</html>
