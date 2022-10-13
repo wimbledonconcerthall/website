@@ -15,11 +15,13 @@ template: wimbledon
 - [Merton Art Trail](https://www.mertonpriory.org/news/merton-arts-trail-exhibition/)
 - Lively choral, music, dance and art scene
 
-A Gehry Concert Hall would transform Wimbledon and Merton into an important international cultural destination. 
+A Gehry Concert Hall would transform Wimbledon and Merton into an important international cultural destination.
 
-Diagram Broadway Cultural Area - as in the business case
+The concert hall will expand and consolidate what is already a significant cultural cluster in an around Wimbledon and Merton, creating an important cultural hub along the Broadway.
 
-## Growing importance of the suburbs.
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ivUU_ESh2P9NZ7EIgQLZbKGFsmCX5wM&ehbc=2E312F" width="100%" height="600" style="border: 1px solid #EEE; border-radius: 8px; margin-bottom: 42px"></iframe>
+
+## Growing importance of the suburbs
 
 Society habits are changing. People are working more and more from home, and reluctant to travel to the centre. In many cities, Paris for example, great concert halls have been established in the suburbs.
 

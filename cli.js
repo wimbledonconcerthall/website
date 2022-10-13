@@ -11,8 +11,6 @@ const chokidar = require('chokidar');
 const fm = require('front-matter');
 const Feed = require('feed').Feed;
 const xml = require('xml');
-const algoliasearch = require('algoliasearch');
-const Cutter = require('utf8-binary-cutter');
 let ejs = require('ejs');
 
 const scriptArgs = process.argv.slice(2);
@@ -21,9 +19,6 @@ const dateAndSeparatorRegEx = /\d{4}-\d{2}-\d{2}---/;
 const dateRegEx = /\d{4}-\d{2}-\d{2}/;
 const host = 'https://www.wimbledonconcerthall.co.uk';
 const sitemap = [];
-const algoliaPages = [];
-const algoliaClient = algoliasearch(process.env.ALGOLIA_APP_ID, process.env.ALGOLIA_API_KEY);
-const algoliaIndex = algoliaClient.initIndex(process.env.ALGOLIA_INDEX);
 const feed = new Feed({
   title: enTranslations.site_name,
   description: enTranslations.site_description,
@@ -39,7 +34,7 @@ const feed = new Feed({
   },
   author: {
     name: enTranslations.site_name,
-    email: "it@joanmira.com",
+    email: "it@wimbledonconcerthall.co.uk",
     link: host
   }
 });
@@ -124,9 +119,6 @@ async function build(folderOrFile) {
       'public/sitemap.xml',
       '<?xml version="1.0" encoding="UTF-8"?>' + xmlString
     );
-
-    console.log('Updating algolia indexes');
-    await safeExecute(async () => await algoliaIndex.saveObjects(algoliaPages));
   }
 }
 
@@ -257,19 +249,6 @@ async function processPage(pagePath) {
       { priority: 0.7 }
     ]
   });
-
-  if (targetPath) {
-    const maxBinarySizes = {
-      content: 9000
-    };
-    const record = Cutter.truncateFieldsToBinarySize({
-      objectID: targetPath,
-      slug: `/${targetPath}`,
-      title: frontmatter.title,
-      content: markdown
-    }, maxBinarySizes);
-    algoliaPages.push(record);
-  }
 }
 
 async function processListingItem(pagePath, listingSlug, category = null, listingItems) {
