@@ -72,4 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
       };
     });
   });
+
+  const particlesContainer = document.getElementById('particles-js');
+  if (particlesContainer) {
+    particlesJS.load('particles-js', 'json/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  }
 });

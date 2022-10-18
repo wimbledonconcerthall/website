@@ -135,6 +135,9 @@ video {
   background-color: #FFCF7D;
   color: black;
 }
+.ochre a {
+  color: black;
+}
 .red {
   background-color: #C13B4F;
   color: white;

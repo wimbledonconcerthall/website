@@ -137,7 +137,7 @@ h5 {
 
 [data-theme=dark] {
   color-scheme: dark;
-  --background-color: #181818;
+  --background-color: #000;
   --footer-background-color: #000;
   --banner-background-color: #111;
   --color: #cecece;
