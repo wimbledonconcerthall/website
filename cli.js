@@ -223,6 +223,7 @@ async function processPage(pagePath) {
     host,
     content,
     listingItems,
+    targetPath,
     isProduction: process.env.NODE_ENV === 'production'
   }, { filename: templatePath });
 

@@ -34,13 +34,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Top nav active element
   const mainMenuItems = document.querySelectorAll('#main-menu li');
-  mainMenuItems && mainMenuItems.forEach(item => {
-    if (window.location.pathname.includes(item.getAttribute('data-menu-item'))) {
-      item.classList.add('active');
-    } else if (item.getAttribute('data-menu-item') === 'home' && window.location.pathname === '/') {
-      item.classList.add('active');
+  if (mainMenuItems) {
+    for (const item of mainMenuItems) {
+      if (window.location.pathname.includes(item.getAttribute('data-menu-item')) && !window.location.pathname.includes(`${item.getAttribute('data-menu-item')}-`)) {
+        item.classList.add('active');
+      } else if (item.getAttribute('data-menu-item') === 'home' && window.location.pathname === '/') {
+        item.classList.add('active');
+      }
     }
-  });
+  }
 
   // Side menu
   const toggleMenuButton = document.getElementById('menu-toggle');
