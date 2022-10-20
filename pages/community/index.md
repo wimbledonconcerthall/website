@@ -3,16 +3,6 @@ title: "Community"
 template: community
 ---
 
-## Community
-
-Wimbledon and Merton currently present separate communities waiting for the opportunities presented the cultural hub to come together. The Trust will work closely in collaboration with Merton Music Foundation - an Arts Council Music Education hub - to bring striking opportunities to Merton school children.
-
-‘The Kids Get Involved... It opens doors in their minds’
-
-VIDEO of Elisabeth Wigley [CEO of MMF]
-
-Elisabeth Wigley quote overlaid on VIDEO frame... SYNC arrow
-
 The important role the concert hall can play in local musical experience and education
 
 Video cont..
