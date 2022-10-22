@@ -88,11 +88,24 @@ document.addEventListener("DOMContentLoaded", function() {
   const viewerPhoto = document.getElementById('viewer-photo');
   const viewerClose = document.getElementById('viewer-close');
 
-  viewerClose.addEventListener('click', e => {
-    viewer.classList.remove('open');
-  });
+  if (pics && viewer && viewerClose && viewerPhoto) {
+    viewerClose.addEventListener('click', e => {
+      viewer.classList.remove('open');
+    });
 
-  if (viewer && viewerPhoto) {
+    document.onkeydown = (evt) => {
+      evt = evt || window.event;
+      let isEscape = false;
+      if ("key" in evt) {
+        isEscape = (evt.key === "Escape" || evt.key === "Esc");
+      } else {
+        isEscape = (evt.keyCode === 27);
+      }
+      if (isEscape) {
+        viewer.classList.remove('open');
+      }
+    };
+
     Array.from(pics).forEach(pic => {
       pic.addEventListener('click', e => {
         const picUrl = pic.getAttribute('src');
