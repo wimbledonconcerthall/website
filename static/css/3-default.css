@@ -24,3 +24,7 @@ html {
 .page .content iframe {
   margin-bottom: 24px;
 }
+
+.image {
+  cursor: pointer;
+}

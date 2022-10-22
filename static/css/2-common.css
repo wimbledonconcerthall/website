@@ -207,6 +207,34 @@ input[type='checkbox'] {
   padding: .8rem 1rem;
 }
 
+#viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  overflow: scroll;
+}
+
+#viewer.open {
+  display: flex;
+}
+
+#viewer-close {
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  right: 20px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
 @media (min-width: 769px) {
   .banner-quote {
     padding: 120px 100px;

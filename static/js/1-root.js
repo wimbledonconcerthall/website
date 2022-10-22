@@ -81,4 +81,24 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log('callback - particles.js config loaded');
     });
   }
+
+  // Image viewer
+  let pics = document.querySelectorAll('.image');
+  const viewer = document.getElementById('viewer');
+  const viewerPhoto = document.getElementById('viewer-photo');
+  const viewerClose = document.getElementById('viewer-close');
+
+  viewerClose.addEventListener('click', e => {
+    viewer.classList.remove('open');
+  });
+
+  if (viewer && viewerPhoto) {
+    Array.from(pics).forEach(pic => {
+      pic.addEventListener('click', e => {
+        const picUrl = pic.getAttribute('src');
+        viewer.classList.add('open');
+        viewerPhoto.setAttribute('src', picUrl);
+      });
+    });
+  }
 });
