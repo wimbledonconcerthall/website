@@ -235,6 +235,41 @@ input[type='checkbox'] {
   font-size: 20px;
 }
 
+#privacy-popup {
+  position: fixed;
+  bottom: 15px;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0,0.9);
+  font-size: 10px;
+  width: 90%;
+  max-width: 440px;
+  display: none;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.cookie-text {
+  flex: 1 1 80%;
+  line-height: 1.4;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.cookie-text a {
+  color: #FFF;
+}
+
+.cookie-button {
+  flex: 1 1 auto;
+}
+
+#btn-close-privacy {
+  margin: 0;
+}
+
 @media (min-width: 769px) {
   .banner-quote {
     padding: 120px 100px;

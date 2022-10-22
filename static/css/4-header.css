@@ -166,7 +166,7 @@
     height: 100vh;
     width: 70%;
     max-width: 300px;
-    border-left: 1px solid var(--form-element-border-color);
+    box-shadow: -2px 2px 4px 0 rgb(0 0 0 / 20%);
     padding: 24px;
     transition: right ease-in-out 0.3s;
   }

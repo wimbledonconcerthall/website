@@ -1,9 +1,12 @@
 const themeKey = 'theme';
+const privacyKey = 'privacy';
 
 document.addEventListener("DOMContentLoaded", function() {
   const html = document.querySelector('html');
   const themeToggleButton = document.querySelector('.theme-toggle');
+  const privacyPopup = document.getElementById('privacy-popup');
   const savedTheme = localStorage.getItem(themeKey);
+  const acceptedPrivacy = localStorage.getItem(privacyKey);
 
   if (savedTheme) {
     html.setAttribute('data-theme', savedTheme);
@@ -31,6 +34,15 @@ document.addEventListener("DOMContentLoaded", function() {
       localStorage.setItem(themeKey, 'dark');
     }
   });
+
+  if (!acceptedPrivacy) {
+    privacyPopup.style.display = 'flex';
+    const privacyButton = document.getElementById('btn-close-privacy');
+    privacyButton.addEventListener('click', e => {
+      localStorage.setItem(privacyKey, true);
+      privacyPopup.style.display = 'none';
+    });
+  }
 
   // Top nav active element
   const mainMenuItems = document.querySelectorAll('#main-menu li');
