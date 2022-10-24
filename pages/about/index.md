@@ -37,3 +37,4 @@ template: about
 - **[Iain Rawlinson](https://www.rawlinsonpartners.com/about/)**: Chair, Global Philanthropic Holdings. Founder of Rawlinson Partners, providing leadership, advocacy and innovation to business, social enterprise, and charities.
 - **[Nick Jaffer](https://www.globalphilanthropic.com/our-people/nick-jaffer/)**: President Asia Pacific.
 
+&nbsp;
