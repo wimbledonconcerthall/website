@@ -3,6 +3,26 @@
   publish = "public"
 
 [[headers]]
-  for = "/*"
+  for = "/*/images/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=31536000"
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=31536000"
+[[headers]]
+  for = "/video/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=31536000"
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=31536000"
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=31536000"
+[[headers]]
+  for = "/json/*"
   [headers.values]
     Cache-Control = "public, s-max-age=31536000"
