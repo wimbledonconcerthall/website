@@ -5,18 +5,19 @@
   <style>
     .intro {
       width: 100%;
-      height: calc(100vh - 56px);
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       background-color: #000;
+      position: relative;
     }
     #particles-js {
       position: absolute;
       width: 100%;
       height: 100%;
-      top: 56px;
+      top: 0;
     }
     .banner-gradient {
       position: absolute;
@@ -89,12 +90,6 @@
       text-align: left;
     }
     @media (min-width: 769px) {
-      .intro {
-        height: calc(100vh - 135px);
-      }
-      #particles-js {
-        top: 135px;
-      }
       .banner-gradient h1 {
         font-size: 65px;
       }
@@ -112,6 +107,13 @@
 </head>
 <body>
   <%- include('header'); %>
+  <picture>
+    <source media="(min-width: 769px)" type="image/webp" srcset="/building/images/model.webp" />
+    <source media="(min-width: 769px)" type="image/jpeg" srcset="/building/images/model.jpg" />
+    <source media="(min-width: 320px)" type="image/webp" srcset="/building/images/model-mobile.webp" />
+    <source media="(min-width: 320px)" type="image/jpeg" srcset="/building/images/model-mobile.jpg" />
+    <img class="image" width="100%" src="/building/images/model.jpg" alt="Frank Gehry with model">
+  </picture>
   <div class="intro">
     <div id="particles-js"></div>
     <div class="banner-gradient">
