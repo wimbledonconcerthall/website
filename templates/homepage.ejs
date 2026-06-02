@@ -15,6 +15,15 @@
       background-color: var(--background-color);
       position: relative;
     }
+    .music-gives-wings {
+      text-align: center;
+      font-size: 24px;
+      font-style: italic;
+      position: absolute;
+      top: 60px;
+      z-index: 1;
+      width: 100%;
+    }
     #particles-js {
       position: absolute;
       width: 100%;
@@ -111,6 +120,9 @@
       background-image: linear-gradient(138deg, #FFF0C6, var(--primary));
     }
     @media (min-width: 769px) {
+      .music-gives-wings {
+        font-size: 48px;
+      }
       .banner-gradient h1 {
         font-size: 65px;
       }
@@ -118,7 +130,7 @@
         padding: 50px 100px;
       }
       .hero-quote .main-wrapper {
-        max-width: 800px;
+        max-width: 850px;
       }
       .floor-plan {
         flex-direction: row;
@@ -128,44 +140,46 @@
 </head>
 <body>
   <%- include('header'); %>
-  <picture>
-    <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/model.webp" />
-    <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/model.jpg" />
-    <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/model-mobile.webp" />
-    <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/model-mobile.jpg" />
-    <img class="image" width="100%" src="/home/images/model.jpg" alt="Frank Gehry with model">
-  </picture>
-  <div class="main-wrapper banner-rip-frank">
-    <p>We are deeply saddened to learn of the death of Frank Gehry.</p>
-    <p>In a remarkable career spanning over six decades, he leaves behind a body of work that changed our understanding of what a building can be. His bold, playful designs united architecture, imagination and a deeply human experience. They reimagined how we interact with public spaces, that a concert hall itself could sing before a single note had been played.</p>
-    <p>It was an enormous pleasure to collaborate with Frank on the designs for the Wimbledon Concert Hall. It was impossible not to be enthused by his passion and energy, and a deep love for his work. As we continue the work of bringing his design for Wimbledon to life, we will endeavour to honour his extraordinary legacy, and the inspiration he has given to generations of artists and audiences alike.</p>
-    <p>Our thoughts are with his family, his colleagues, and all who knew him.</p>
+  <div style="position: relative">
+    <div class="music-gives-wings">
+      Music gives Wings to the Soul
+    </div>
+    <picture>
+      <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/collage.webp" />
+      <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/collage.jpg" />
+      <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/collage-mobile.webp" />
+      <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/collage-mobile.jpg" />
+      <img class="image" width="100%" src="/home/images/collage.jpg" alt="Frank Gehry Collage">
+    </picture>
   </div>
   <div class="intro">
     <div id="particles-js"></div>
     <div class="banner-gradient">
       <div class="main-wrapper">
-        <h1>A new concert hall for London in Wimbledon, designed by Frank Gehry</h1>
+        <h1>A new concert hall for London in Wimbledon</h1>
         <a href="/donors">Get involved now</a>
       </div>
     </div>
   </div>
   <div class="banner-quote hero-quote">
-    <div class="main-wrapper">"The great concert halls of the world inspire, and leave a strong intergenerational legacy.”<span>— Dame Darcey Bussell</span>
+    <div class="main-wrapper">"The great concert halls of the world have the power to change lives and inspire, to leave a strong intergenerational legacy.”<span>— Dame Darcey Bussell</span>
     </div>
     <p style="margin-top: 40px;">Patrons: <a href="https://en.wikipedia.org/wiki/Darcey_Bussell">Dame Darcey Bussell DBE</a> • <a href="https://www.esapekkasalonen.com/">Esa-Pekka Salonen</a> • <a href="http://www.vladimirashkenazy.com/biography.php">Vladimir Ashkenazy</a> • <a href="https://en.wikipedia.org/wiki/Joanna_Lumley">Dame Joanna Lumley DBE</a> • <a href="https://www.akramkhancompany.net/">Akram Khan M.B.E.</a></p>
   </div>
-  <div class="hero">
-    <figure>
-      <picture>
-        <source media="(min-width: 769px)" type="image/webp" srcset="/home/images/collage.webp" />
-        <source media="(min-width: 769px)" type="image/jpeg" srcset="/home/images/collage.jpg" />
-        <source media="(min-width: 320px)" type="image/webp" srcset="/home/images/collage-mobile.webp" />
-        <source media="(min-width: 320px)" type="image/jpeg" srcset="/home/images/collage-mobile.jpg" />
-        <img class="image" width="100%" src="/home/images/collage.jpg" alt="Frank Gehry Collage">
-      </picture>
-      <figcaption>Frank Gehry 'Collage III' — Wimbledon Concert Hall at night</figcaption>
-    </figure>
+  <div class="founding-purpose">
+    <div class="main-wrapper">
+      <div class="founding-section">
+        <h2>Our Founding Purpose</h2>
+        <p>With the passing of Frank Gehry, it is especially important to be clear that this project is founded not on any single individual, but on a long-term civic purpose and a commitment to continuity, stewardship, and public benefit.</p>
+        <p>The Wimbledon Concert Hall &amp; Performing Arts Centre was conceived as a new civic cultural institution designed to deliver long-term public benefit through music. Whilst offering an important new state-of-the-art performance venue, for London it is being developed as a permanent public institution. From the outset, it has been purposed around education, access, and long-term community benefit, with the aim of serving local communities in Wimbledon while also making a major contribution to London's and the nation's wider cultural and educational life.</p>
+      </div>
+      <div class="founding-section">
+        <h2>Why Now</h2>
+        <p>As advances in technology reshape how societies work and learn, the project is founded on a simple premise: that sharing, human creativity, cultural understanding, and creative confidence remain essential public goods, and that access to serious cultural experiences should be broad, sustained, and inclusive.</p>
+        <p>Significant preparatory work has already been undertaken to ensure the project is credible, deliverable, and transparent. This includes the engagement of an internationally experienced architect, identification of an appropriate site, and detailed early development work to provide a clear basis for consultation, assessment, and dialogue with stakeholders.</p>
+        <p>The project is now being advanced through a careful and responsible process of expert input, partnership working, and stakeholder engagement, to ensure that it meets cultural, educational, planning, and civic objectives and is sustainable over the long term.</p>
+      </div>
+    </div>
   </div>
   <div class="main-wrapper">
     <h2>Music gives wings to the soul</h2>
