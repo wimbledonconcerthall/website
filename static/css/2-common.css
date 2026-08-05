@@ -131,6 +131,11 @@ video {
   color: black;
 }
 
+.grey {
+  background-color: #b8b8b8;
+  color: black;
+}
+
 .green {
   background-color: #8E8259;
   color: white;
